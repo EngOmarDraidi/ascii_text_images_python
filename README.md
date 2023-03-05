@@ -13,8 +13,8 @@ We will declare variable with string value is consist of all ASCII characters
   ASCII_CHARACTERS_BY_SURFACE = '`^\",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$'
 ```
 <hr>
-Then, we will calculate maximum brightness value (each pixel in image consists of (r, g, b) values) and calculate brightness weight
 
+Then, we will calculate maximum brightness value (each pixel in image consists of (r, g, b) values) and calculate brightness weight
 
 ```batch
   MAX_BRIGHTNESS = 255 * 3
