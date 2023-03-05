@@ -8,11 +8,13 @@ If you are a Junior developer looking for a new challenge, this might be a good 
 
 We will declare variable with string value is consist of all ASCII characters
 
+
 ```batch
   ASCII_CHARACTERS_BY_SURFACE = '`^\",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$'
 ```
 <hr>
 Then, we will calculate maximum brightness value (each pixel in image consists of (r, g, b) values) and calculate brightness weight
+
 
 ```batch
   MAX_BRIGHTNESS = 255 * 3
@@ -20,6 +22,7 @@ Then, we will calculate maximum brightness value (each pixel in image consists o
 ```
 <hr>
 Then, import Image from PIL module to open any image you want convert it and pass the variable as argument to our function
+
 
 ```batch
   from PIL import Image # to download this module in terminal type this command -> pip3 install PIL
@@ -30,6 +33,7 @@ Then, import Image from PIL module to open any image you want convert it and pas
 ```
 <hr>
 Now, we’ll iterate through all the pixels and read them one by one and pass it as argument to convert function and add the ASCII code we get it to ascii_art array
+
 
 ```batch
   def art_image_with_ascii(image):
@@ -48,6 +52,7 @@ Now, we’ll iterate through all the pixels and read them one by one and pass it
 <hr>
 For a given pixel we can find its corresponding index from the ASCII characters string
 
+
 ```batch
   def convert_pixel_to_character(pixel):
     (r, g, b) = pixel
@@ -58,6 +63,7 @@ For a given pixel we can find its corresponding index from the ASCII characters 
 ```
 <hr>
 Finally, we’ll write everything into a text file
+
 
 ```batch
   def save_ascii_text_in_file(ascii_text):
