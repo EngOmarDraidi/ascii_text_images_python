@@ -18,7 +18,7 @@ Then, we will calculate maximum brightness value (each pixel in image consists o
   MAX_BRIGHTNESS = 255 * 3
   BRIGHTNESS_WEIGHT = len(ASCII_CHARACTERS_BY_SURFACE) / MAX_BRIGHTNESS
 ```
-
+<hr>
 Then, import Image from PIL module to open any image you want convert it and pass the variable as argument to our function
 
 ```batch
@@ -28,7 +28,7 @@ Then, import Image from PIL module to open any image you want convert it and pas
     image = Image.open('your-image.jpeg')
     art_image_with_ascii(image)
 ```
-
+<hr>
 Now, we’ll iterate through all the pixels and read them one by one and pass it as argument to convert function and add the ASCII code we get it to ascii_art array
 
 ```batch
@@ -45,7 +45,7 @@ Now, we’ll iterate through all the pixels and read them one by one and pass it
 
     save_ascii_text_in_file(ascii_art)
 ```
-
+<hr>
 For a given pixel we can find its corresponding index from the ASCII characters string
 
 ```batch
@@ -56,7 +56,7 @@ For a given pixel we can find its corresponding index from the ASCII characters 
 
     return ASCII_CHARACTERS_BY_SURFACE[index]
 ```
-
+<hr>
 Finally, we’ll write everything into a text file
 
 ```batch
