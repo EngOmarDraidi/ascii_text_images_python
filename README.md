@@ -6,12 +6,12 @@ If you are a Junior developer looking for a new challenge, this might be a good 
 
 ## Code explanation
 
-**We will declare variable with string value is consist of all ASCII characters**
+We will declare variable with string value is consist of all ASCII characters
 
 ```batch
   ASCII_CHARACTERS_BY_SURFACE = '`^\",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$'
 ```
-
+<hr>
 Then, we will calculate maximum brightness value (each pixel in image consists of (r, g, b) values) and calculate brightness weight
 
 ```batch
